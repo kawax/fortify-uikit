@@ -1,0 +1,70 @@
+# Fortify views for UIkit3
+
+https://getuikit.com/
+
+## Available views
+- register
+- login
+- forgot-password
+- reset-password
+
+### Unavailable
+- verify-email
+- confirm-password
+- two-factor-challenge
+
+This is an experimental package so not all views are available.
+
+## Requirements
+- PHP >= 7.3
+- Laravel >= 8.0
+- Fortify >= 1.4
+
+## Versioning
+- Basic : semver
+- Drop old PHP or Laravel version : `+0.1`. composer should handle it well.
+- Support only latest major version (`master` branch), but you can PR to old branches.
+
+## Installation
+Before install this package, you should install `laravel/fortify` (without Jetstream)
+https://github.com/laravel/fortify
+
+```
+composer require laravel/fortify
+php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
+php artisan migrate
+```
+
+Add `App\Providers\FortifyServiceProvider::class,` to `config/app.php`
+
+```
+composer require revolution/fortify-uikit
+```
+
+Add `Fortify::viewPrefix('fortify-uikit::');` to `FortifyServiceProvider@boot`
+
+```php
+    public function boot()
+    {
+        Fortify::viewPrefix('fortify-uikit::');
+
+        //
+    }
+```
+
+## Publish views
+
+```
+php artisan vendor:publish --tag=fortify-uikit
+```
+
+Publish to `/resources/views/vendor/fortify-uikit`
+
+You can customize any files.
+
+## Demo
+https://github.com/kawax/fortify-project
+
+## LICENSE
+MIT  
+
