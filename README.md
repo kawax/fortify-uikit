@@ -20,11 +20,6 @@ This is an experimental package so not all views are available.
 - Laravel >= 8.0
 - Fortify >= 1.4
 
-## Versioning
-- Basic : semver
-- Drop old PHP or Laravel version : `+0.1`. composer should handle it well.
-- Support only latest major version (`master` branch), but you can PR to old branches.
-
 ## Installation
 Before install this package, you should install `laravel/fortify` (without Jetstream)
 https://github.com/laravel/fortify
@@ -67,4 +62,3 @@ https://github.com/kawax/fortify-project
 
 ## LICENSE
 MIT  
-
