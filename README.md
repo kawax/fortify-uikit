@@ -1,5 +1,7 @@
 # Fortify views for UIkit3
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/0d4e9ba3f10341847cb9/maintainability)](https://codeclimate.com/github/kawax/fortify-uikit/maintainability)
+
 https://getuikit.com/
 
 ## Available views
