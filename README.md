@@ -47,8 +47,6 @@ Add `Fortify::viewPrefix('fortify-uikit::');` to `FortifyServiceProvider@boot`
     }
 ```
 
-Finally, you must install uikit css and build by laravel-mix.
-
 ## Publish views
 
 ```
@@ -60,7 +58,7 @@ Publish to `/resources/views/vendor/fortify-uikit`
 You can customize any files.
 
 ## Demo
-https://github.com/kawax/fortify-project
+https://github.com/kawax/fortify-project/tree/uikit
 
 ## LICENSE
 MIT  
