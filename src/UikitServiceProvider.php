@@ -17,7 +17,7 @@ class UikitServiceProvider extends ServiceProvider
 
         $this->publishes(
             [
-                __DIR__.'/../views' => resource_path('views/vendor/fortify-uikit'),
+                __DIR__.'/../views' => $this->app->resourcePath('views/vendor/fortify-uikit'),
             ],
             'fortify-uikit'
         );
