@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 class UikitServiceProvider extends ServiceProvider
 {
+    protected const TAG = 'fortify-uikit';
+
     /**
      * Bootstrap any application services.
      *
@@ -13,13 +15,13 @@ class UikitServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../views', 'fortify-uikit');
+        $this->loadViewsFrom(__DIR__.'/../views', self::TAG);
 
         $this->publishes(
             [
-                __DIR__.'/../views' => $this->app->resourcePath('views/vendor/fortify-uikit'),
+                __DIR__.'/../views' => $this->app->resourcePath('views/vendor/'.self::TAG),
             ],
-            'fortify-uikit'
+            self::TAG
         );
     }
 }
