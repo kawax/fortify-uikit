@@ -20,7 +20,9 @@
 
     @include('fortify-uikit::navbar')
 
-    @yield('content')
+    <div class="uk-container uk-width-2-3@m">
+        @yield('content')
+    </div>
 </div>
 </body>
 </html>
