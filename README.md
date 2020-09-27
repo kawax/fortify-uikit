@@ -20,7 +20,7 @@ This is an experimental package so not all views are available.
 ## Requirements
 - PHP >= 7.3
 - Laravel >= 8.0
-- Fortify >= 1.4
+- Fortify >= 1.5
 
 ## Installation
 Before install this package, you should install `laravel/fortify` (without Jetstream)

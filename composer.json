@@ -10,7 +10,7 @@
     "require": {
         "php": "^7.3||^8.0",
         "illuminate/support": "^8.0",
-        "laravel/fortify": "^1.4"
+        "laravel/fortify": "^1.5"
     },
     "autoload": {
         "psr-4": {
