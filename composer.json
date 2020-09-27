@@ -29,5 +29,8 @@
                 "Revolution\\Fortify\\Uikit\\UikitServiceProvider"
             ]
         }
+    },
+    "suggest": {
+        "revolution/laravel-pagination-uikit": "Pagination views."
     }
 }
